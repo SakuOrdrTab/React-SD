@@ -1,0 +1,87 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="191px" height="741px" viewBox="-0.5 -0.5 191 741" content="&lt;mxfile&gt;&lt;diagram id=&quot;2XYj6zQr19ONDOg9URtQ&quot; name=&quot;Page-1&quot;&gt;zVdNc9owEP01HJORLXDgmECSXjqTKdNpc1TsNVYjLFcSAfrru/owtrGZkpnSlANon3ZXWr2ntRnR+Xr3qFhVfJYZiFFMst2ILkZxHCUJwR+L7AMS0ZlHVopnAWuAJf8FAQyBqw3PQHccjZTC8KoLprIsITUdjCklt123XIruqhVbQQ9Ypkz00W88M4VHpxPS4J+Ar4p65YiEmTWrnQOgC5bJbQui9yM6V1IaP1rv5iDs6dXn4uMeTsweNqagNOcExD7gjYlNqG0UJwJD73KJGXCDZh+qTn5uZD1xpR0nt+gQRxUSe9fM42hlf+9Y+gpl5rx8StyGz+odavhF1chVLph+RbenvSlkOeCQQYU5Na5rp8ly8QglKGakcjzab7627CH5Cpjhg1kqJd+cgmKiQJt8Y4+EVfyQwxQ2Q65wt7YET9XhJOJtwQ0sK5Zae4six6SFWQu0IhwyXXnV5XwHmT0yLsQyhGspeI3NpcDlbEoKNJ2iSvzxtnDiPohro+QrtGbuyGziZgKFoAzsTsogOogLryXINRi1R5cQQGnQY7iR8TjY20be0SxgRVvaNcjClVodcjeqw0EQ3rAI6ftF2JdbHaIrVp6lW3JCtw816x3h+rSnhPveSxPRE4tffQGWmusfekC1XzU4fePuFDo5ac9tG+W6Emyva+0PxP7hBvbgy+s9yaY3ybiv99x9hvRObydjGl1G78k/1fu4p/d2H2tk1/DnepnrV9qwFwGO9TzfaCeCA+2kcgrB9rauzGVYRLbC8ziifVZzwihh7+piixtyqS42GyCVDJFK/gKpk4EmdkQAPuwrO8wF7G7tawiWjY0mDBcpPvw0T90pMWX6cIusYx5gx813NMj1JFjP1grjxa5t7GujxBJbQdZ8Dvmd0YQ5q47zdUHWe0c64glrlxuVQqfJY2UrMK2Xjz6bZ9OlQOAT/q27jSEOwxpPkrv2XMvlpiuXSXwkA7/9ENV+iTpKND5KND5O5IvuJXKSOhR+lsqSj1XZxRXTlsf4g+UxPfFO9P/IA83mr4J3b/5x0fvf&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="150" width="190" height="190" fill="#e3c800" stroke="#b09500" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 245px; margin-left: 1px;">
+                        <div data-drawio-colors="color: #000000; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 21px;">
+                                    Backend:
+                                </font>
+                                <br/>
+                                -flask/Python
+                                <br/>
+                                -depends on SDGenerator for image creation
+                                <br/>
+                                -provides restful api for the frontend
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="95" y="249" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Backend:...
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="550" width="190" height="190" fill="#6d8764" stroke="#3a5431" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 645px; margin-left: 1px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <font style="">
+                                    <span style="font-size: 20px;">
+                                        Frontend:
+                                    </span>
+                                    <br/>
+                                    <font style="font-size: 13px;">
+                                        -React.js
+                                        <br/>
+                                        -User interaction, displays images
+                                        <br/>
+                                    </font>
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="95" y="649" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Frontend:...
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="0" width="100" height="100" fill="#f0a30a" stroke="#bd7000" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 50px; margin-left: 1px;">
+                        <div data-drawio-colors="color: #000000; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                SDGenerator:
+                                <br/>
+                                creates stable diffusion images per prompt
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="50" y="54" fill="#000000" font-family="Helvetica" font-size="13px" text-anchor="middle">
+                    SDGenerator:...
+                </text>
+            </switch>
+        </g>
+        <path d="M 100 530.5 L 110.5 530.5 L 95 549.5 L 79.5 530.5 L 90 530.5 L 90 359.5 L 79.5 359.5 L 95 340.5 L 110.5 359.5 L 100 359.5 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 55 130.5 L 65.5 130.5 L 50 149.5 L 34.5 130.5 L 45 130.5 L 45 119.5 L 34.5 119.5 L 50 100.5 L 65.5 119.5 L 55 119.5 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>
