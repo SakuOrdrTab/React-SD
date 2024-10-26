@@ -6,6 +6,8 @@ class SDCreator():
     def __init__(self, model="stabilityai/stable-diffusion-3-medium-diffusers"):
         self._pipe = StableDiffusion3Pipeline.from_pretrained(
             model,
+            text_encoder_3=None, 
+            tokenizer_3=None, 
             torch_dtype=torch.float16
         )
         self._pipe.to("cuda")

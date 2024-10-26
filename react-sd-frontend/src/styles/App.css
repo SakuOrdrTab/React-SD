@@ -1,0 +1,16 @@
+.application {
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+  }
+  
+  .app-box {
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .application {
+      flex-direction: column;
+    }
+  }
+  

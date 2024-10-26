@@ -1,24 +1,24 @@
 import { useState } from 'react'
+import './styles/App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
+  console.log('Inside App!')
+  const [prompt, setPrompt] = useState('')
+  const [negativePrompt, setNegativePrompt] = useState('')
   return (
-    <>
-
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <div className='application'>
+      <h1>This is the stable diffusion App</h1>
+      <div className='app-box'>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Here comes the actual Image
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div className='app-box'>
+        <p>
+          And here comes the other things: prompt, settings, etc
+        </p>
+      </div>
+    </div>
   )
 }
 
