@@ -13,4 +13,13 @@
       flex-direction: column;
     }
   }
+
+  .wide-textarea {
+    width: 90%;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  
   
