@@ -1,25 +1,48 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .application {
-    display: flex;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.app-box {
+
+  align-items: left;    /* Optional: center content vertically */
+  justify-content: center; /* Optional: center content horizontally */
+}
+
+@media (orientation: landscape) {
+  .application {
     flex-direction: row;
-    background-color: aquamarine;
-  }
-  
-  .app-box {
-    flex: 1;
-  }
-  
-  @media (max-width: 768px) {
-    .application {
-      flex-direction: column;
-    }
   }
 
-  .wide-textarea {
-    width: 90%;
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
-    margin-right: 10px;
-    margin-left: 10px;
+  .app-box {
+    width: 50vw;
+    height: 100vh;
   }
-  
-  
-  
+}
+
+@media (orientation: portrait) {
+  .application {
+    flex-direction: column;
+  }
+
+  .app-box {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+.wide-textarea {
+  width: 90%;
+  box-sizing: border-box; 
+  margin-right: 10px;
+  margin-left: 10px;
+} 

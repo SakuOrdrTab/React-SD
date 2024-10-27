@@ -57,8 +57,8 @@ const App = () => {
 
   return (
     <div className='application'>
-      <h1>This is the stable diffusion App</h1>
       <div className='app-box'>
+        <h1>This is the stable diffusion App</h1>
         <p>
           Here comes the actual image <br />
           <SDImage image={currentImage}/>
