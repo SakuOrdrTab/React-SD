@@ -39,10 +39,3 @@
     height: 50vh;
   }
 }
-
-.wide-textarea {
-  width: 90%;
-  box-sizing: border-box; 
-  margin-right: 10px;
-  margin-left: 10px;
-} 

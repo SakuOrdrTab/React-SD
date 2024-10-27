@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './styles/App.css'
+import PromptSettings from './components/PromptSettings'
 
 const SDImage = ({ image }) => {
   console.log('Rendering SDImage component')
@@ -16,38 +17,7 @@ const SDImage = ({ image }) => {
   )
 }
 
-const PromptSettings = ({ prompt, setPrompt, negativePrompt, setNegativePrompt }) => {
-  console.log('Rendering PromptSettings component')
-  
-  return (
-    <div>
-      <div>
-        <p>
-          Prompt:<br />
-          <textarea className="wide-textarea"
-            value={prompt}
-            onChange={(e) => setPrompt(e.target.value)} // Update state with the input value
-            placeholder="Type something..."
-            rows={3}
-            />
-        </p>
-      </div>
-      <div>
-        <p>
-        Negative Prompt:<br />
-        <textarea className="wide-textarea"
-          value={negativePrompt}
-          onChange={(e) => setNegativePrompt(e.target.value)} // Update state with the input value
-          placeholder="Type something..."
-          rows={3}
-        />
-        </p>
-      </div>
-    </div>
-  )
-}
-
-// const createImage
+// const createImage = () =>
 
 const App = () => {
   console.log('Inside App!')
