@@ -1,7 +1,7 @@
 import '../styles/PromptSettings.css'
 
 const PromptSettings = ({ prompt, setPrompt, negativePrompt, setNegativePrompt }) => {
-    console.log('Rendering PromptSettings component')
+    // console.log('Rendering PromptSettings component')
 
     return (
         <div>

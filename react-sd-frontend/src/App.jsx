@@ -2,29 +2,8 @@ import { useState } from 'react'
 import './styles/App.css'
 import PromptSettings from './components/PromptSettings'
 import imageService from './services/imageService'
-
-const SDImage = ({ image }) => {
-  console.log('Rendering SDImage component')
-  // use_effect
-  return image === null ? (
-    <>
-      no generated image yet
-    </>
-  ) :
-  (
-    <>
-      no image functionality yet
-    </>
-  )
-}
-
-const GenerateButton = ({ onClick }) => {
-  console.log('Generatebutton pressed')
-  return (
-    <button onClick={onClick} >Generate</button>
-  )
-}
-
+import SDImage from './components/SDImage'
+import GenerateButton from './components/GenerateButton'
 
 const App = () => {
   const [prompt, setPrompt] = useState('')
