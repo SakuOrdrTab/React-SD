@@ -1,5 +1,5 @@
 import '../styles/PromptSettings.css'
-import PropTypes from 'prop-types'
+
 
 const PromptSettings = ({ prompt, setPrompt, negativePrompt, setNegativePrompt }) => {
     console.log('Rendering PromptSettings component')
@@ -32,11 +32,5 @@ const PromptSettings = ({ prompt, setPrompt, negativePrompt, setNegativePrompt }
     )
 }
 
-PromptSettings.propTypes = {
-    prompt : PropTypes.string,
-    setPrompt : PropTypes.func.isRequired,
-    negativePrompt : PropTypes.string,
-    setNegativePrompt : PropTypes.func.isRequired
-}
 
 export default PromptSettings

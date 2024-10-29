@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import PropTypes from 'prop-types'
 import './styles/App.css'
 import PromptSettings from './components/PromptSettings'
 
@@ -43,10 +42,6 @@ const App = () => {
       </div>
     </div>
   )
-}
-
-SDImage.propTypes = {
-  image : PropTypes.object
 }
 
 export default App
