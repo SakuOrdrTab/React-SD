@@ -12,18 +12,21 @@ const App = () => {
   
   const generateImage = async () => {
     console.log('Sending settings to service:generate.create')
-    const resultingImage = await imageService.generateImage({ prompt, negativePrompt })
-    setCurrentImage(resultingImage)
+    const result = await imageService.generateImage({ prompt, negativePrompt })
+    if (result && result.images) {
+      console.log('Got a result and result.images, setting image')
+      setCurrentImage(result.images)
+    } else {
+      console.error('No images received from the backend.')
+    }
   }
-  
+
   return (
     <div className='application'>
       <div className='app-box'>
         <h1>This is the stable diffusion App</h1>
-        <p>
           Here comes the actual image <br />
-          <SDImage image={currentImage}/>
-        </p>
+          <SDImage images={currentImage}/>
       </div>
       <div className='app-box'>
         <p>
