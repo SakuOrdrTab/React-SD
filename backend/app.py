@@ -1,8 +1,9 @@
+"""Main python backend script for creating stable diffusion images"""
+import base64
+import io
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from sdcreator import SDCreator
-import io
-import base64
 
 app = Flask(__name__)
 CORS(app)  # Enable Cross-Origin Resource Sharing
@@ -10,8 +11,22 @@ CORS(app)  # Enable Cross-Origin Resource Sharing
 # Initialize the SDCreator once when the app starts
 creator = SDCreator()
 
+# app = Flask(__name__, static_folder='dist', static_url_path='')
+
+# @app.route('/')
+# def serve():
+#     return send_from_directory(app.static_folder, 'index.html')
+
 @app.route('/api/generate', methods=['POST'])
 def generate_image():
+    """
+    Handle POST requests to the /api/generate endpoint to generate images based on provided prompts.
+    This function extracts parameters from the incoming JSON request, uses the SDCreator to generate
+    images, converts the generated images to base64 strings, and returns a JSON response containing
+    the images and prompts.
+    Returns:
+        Response: A JSON response containing the generated images and the prompts used.
+    """
     print('Got a post to /api/generate!')
     data = request.get_json()
 
