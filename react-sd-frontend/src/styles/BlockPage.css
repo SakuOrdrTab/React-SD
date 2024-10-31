@@ -1,0 +1,15 @@
+.block-page {
+    align-items: left;    /* Optional: center content vertically */
+    justify-content: center; /* Optional: center content horizontally */
+  }
+  
+  @media (orientation: landscape) {
+    .application {
+      flex-direction: row;
+    }
+  
+    .block-page {
+      width: 50vw;
+      height: 100vh;
+    }
+  }
