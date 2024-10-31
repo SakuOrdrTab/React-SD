@@ -1,21 +1,21 @@
 """Main python backend script for creating stable diffusion images"""
 import base64
 import io
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from sdcreator import SDCreator
 
-app = Flask(__name__)
+# app = Flask(__name__)
+app = Flask(__name__, static_folder='dist', static_url_path='')
+
 CORS(app)  # Enable Cross-Origin Resource Sharing
 
 # Initialize the SDCreator once when the app starts
 creator = SDCreator()
 
-# app = Flask(__name__, static_folder='dist', static_url_path='')
-
-# @app.route('/')
-# def serve():
-#     return send_from_directory(app.static_folder, 'index.html')
+@app.route('/')
+def serve():
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/api/generate', methods=['POST'])
 def generate_image():
@@ -72,6 +72,11 @@ def generate_image():
     print('Now sending the response')
 
     return jsonify(response)
+
+# Catch-all route for SPA
+@app.errorhandler(404)
+def not_found(e):
+    return send_from_directory(app.static_folder, 'index.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

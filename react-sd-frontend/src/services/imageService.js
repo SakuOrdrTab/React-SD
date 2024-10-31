@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:5000/api/generate'
+const baseUrl = '/api/generate'
 
 const generateImage = async (imageSettings) => {
     console.log('Inside ganerate service, creating image')
