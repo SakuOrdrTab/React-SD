@@ -29,12 +29,15 @@ def generate_image():
     """
     print('Got a post to /api/generate!')
     data = request.get_json()
+    print(data)
 
-    # Extract parameters from the request
-    prompt = data.get('prompt', '')
+    # Extract imagesettings
+    image_settings = data.get('imageSettings', {})
+
+    prompt = image_settings.get('prompt', '')
     print("Found prompt: ", prompt)
     
-    negative_prompt = data.get('negativePrompt', '')
+    negative_prompt = image_settings.get('negativePrompt', '')
     print("Found negative prompt: ", negative_prompt)
     # num_inference_steps = data.get('num_inference_steps', 28)
     # height = data.get('height', 512)
