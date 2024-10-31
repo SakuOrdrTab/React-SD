@@ -1,4 +1,6 @@
 /* Reset default margins and paddings */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@
   width: 100vw;
   height: 100vh;
   background-color: aquamarine;
+  font-family: 'Lato', sans-serif; 
 }
 
 .app-box {
