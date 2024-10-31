@@ -1,16 +1,14 @@
 import '../styles/PromptSettings.css'
 
-const PromptSettings = ({ prompt, setPrompt, negativePrompt, setNegativePrompt }) => {
-    // console.log('Rendering PromptSettings component')
-
+const PromptSettings = ({ imageSettings, setImageSettings }) => {
     return (
         <div>
         <div>
             <p>
             Prompt:<br />
             <textarea className="wide-textarea"
-                value={prompt}
-                onChange={(e) => setPrompt(e.target.value)} // Update state with the input value
+                value={imageSettings.prompt}
+                onChange={(e) => setImageSettings({ ...imageSettings, prompt : e.target.value })} // Update state with the input value
                 placeholder="Type something..."
                 rows={3}
                 />
@@ -20,8 +18,8 @@ const PromptSettings = ({ prompt, setPrompt, negativePrompt, setNegativePrompt }
             <p>
             Negative Prompt:<br />
             <textarea className="wide-textarea"
-            value={negativePrompt}
-            onChange={(e) => setNegativePrompt(e.target.value)} // Update state with the input value
+            value={imageSettings.negativePrompt}
+            onChange={(e) => setImageSettings({ ...imageSettings, negativePrompt : e.target.value })} // Update state with the input value
             placeholder="Type something..."
             rows={3}
             />

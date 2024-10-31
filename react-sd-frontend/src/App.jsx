@@ -6,13 +6,16 @@ import SDImage from './components/SDImage'
 import GenerateButton from './components/GenerateButton'
 
 const App = () => {
-  const [prompt, setPrompt] = useState('')
-  const [negativePrompt, setNegativePrompt] = useState('')
+  const [imageSettings, setImageSettings] = useState({
+    prompt: '',
+    negativePrompt: '',
+  })
+
   const [currentImage, setCurrentImage] = useState(null)
   
   const generateImage = async () => {
     console.log('Sending settings to service:generate.create')
-    const result = await imageService.generateImage({ prompt, negativePrompt })
+    const result = await imageService.generateImage({ imageSettings })
     if (result && result.images) {
       console.log('Got a result and result.images, setting image')
       setCurrentImage(result.images)
@@ -32,7 +35,7 @@ const App = () => {
         <p>
           And here comes the other things: prompt, settings, etc
         </p>
-        <PromptSettings prompt={prompt} setPrompt={setPrompt} negativePrompt={negativePrompt} setNegativePrompt={setNegativePrompt} />
+        <PromptSettings imageSettings={imageSettings} setImageSettings={setImageSettings} />
         <GenerateButton onClick={generateImage} />
       </div>
     </div>

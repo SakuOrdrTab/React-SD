@@ -32,7 +32,10 @@ def generate_image():
 
     # Extract parameters from the request
     prompt = data.get('prompt', '')
+    print("Found prompt: ", prompt)
+    
     negative_prompt = data.get('negativePrompt', '')
+    print("Found negative prompt: ", negative_prompt)
     # num_inference_steps = data.get('num_inference_steps', 28)
     # height = data.get('height', 512)
     # width = data.get('width', 512)
