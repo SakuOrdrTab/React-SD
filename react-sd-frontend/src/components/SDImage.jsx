@@ -1,7 +1,7 @@
 const SDImage = ({ images }) => {
-    console.log('Rendering SDImage component')
+    // console.log('Rendering SDImage component')
     if (!images || images.length === 0) {
-      console.log('No image in images')
+      // console.log('No image in images')
       return <div>No image generated yet.</div>
     }
   

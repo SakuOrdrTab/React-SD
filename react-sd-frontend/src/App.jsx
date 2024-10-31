@@ -15,10 +15,10 @@ const App = () => {
   const [currentImage, setCurrentImage] = useState(null)
   
   const generateImage = async () => {
-    console.log('Sending settings to service:generate.create')
+    // console.log('Sending settings to service:generate.create')
     const result = await imageService.generateImage({ imageSettings })
     if (result && result.images) {
-      console.log('Got a result and result.images, setting image')
+      // console.log('Got a result and result.images, setting image')
       setCurrentImage(result.images)
     } else {
       console.error('No images received from the backend.')
@@ -28,13 +28,14 @@ const App = () => {
   return (
     <div className='application'>
       <BlockPage>
-        <h1>This is the stable diffusion App</h1>
-          Here comes the actual image <br />
-          <SDImage images={currentImage}/>
+        <h1>Stable diffusion 3</h1>
+        <SDImage images={currentImage}/>
       </BlockPage>
       <BlockPage>
         <p>
-          And here comes the other things: prompt, settings, etc
+        Enter a prompt describing what you want to generate a picture about.<br />
+        Negative prompt describes, what you <b>don&apos;t</b> want to see in the image.<br />
+        <br></br>
         </p>
         <PromptSettings imageSettings={imageSettings} setImageSettings={setImageSettings} />
         <GenerateButton onClick={generateImage} />
