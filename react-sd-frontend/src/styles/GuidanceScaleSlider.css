@@ -1,0 +1,18 @@
+.guidance-slider {
+    width: 20vw;
+    margin: 0 auto 10px auto; /* Center and add margin */
+    padding: 15px 30px; 
+    font-size: 18px;
+}
+
+.guidance-slider .MuiSlider-track {
+    background-color: rgb(57, 57, 57); /* Track color */
+}
+
+.guidance-slider .MuiSlider-rail {
+    background-color: lightgray; /* Rail color */
+}
+
+.guidance-slider .MuiSlider-thumb {
+    background-color: rgb(57, 57, 57); /* Thumb (handle) color */
+}

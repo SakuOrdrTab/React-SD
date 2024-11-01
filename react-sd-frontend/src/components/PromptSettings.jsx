@@ -1,5 +1,6 @@
 import '../styles/PromptSettings.css'
-import Slider from '@mui/material/Slider'
+import './GuidanceScaleSlider'
+import GuidanceScaleSlider from './GuidanceScaleSlider'
 
 const PromptSettings = ({ imageSettings, setImageSettings }) => {
     return (
@@ -26,22 +27,7 @@ const PromptSettings = ({ imageSettings, setImageSettings }) => {
                 />
                 </p>
             </div>
-        
-            <div>
-                <p>
-                Guidance Scale:<br />
-                <Slider className="guidance-slider"
-                    value={imageSettings.guidanceScale || 7.0}
-                    onChange={(e, newValue) =>
-                    setImageSettings({ ...imageSettings, guidanceScale: newValue })
-                    }
-                    min={0}
-                    max={20}
-                    step={0.1}
-                    valueLabelDisplay="on"
-                />
-                </p>
-            </div>
+            <GuidanceScaleSlider imageSettings={imageSettings} setImageSettings={setImageSettings} />
         </div>
     )
 }
