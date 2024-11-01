@@ -42,7 +42,8 @@ def generate_image():
     # num_inference_steps = data.get('num_inference_steps', 28)
     # height = data.get('height', 512)
     # width = data.get('width', 512)
-    # guidance_scale = data.get('guidance_scale', 7.0)
+    guidance_scale = image_settings.get('guidanceScale', 7.0)
+    print('Found guidance scale: ', guidance_scale)
     # num_images_per_prompt = data.get('num_images_per_prompt', 1)
 
     # Generate images using SDCreator
@@ -53,7 +54,7 @@ def generate_image():
         # num_inference_steps=num_inference_steps,
         # height=height,
         # width=width,
-        # guidance_scale=guidance_scale,
+        guidance_scale=guidance_scale,
         # num_images_per_prompt=num_images_per_prompt
     )
     print('backend got a return value from SCCreator')

@@ -10,6 +10,7 @@ const App = () => {
   const [imageSettings, setImageSettings] = useState({
     prompt: '',
     negativePrompt: '',
+    guidanceScale: 7.0
   })
 
   const [currentImage, setCurrentImage] = useState(null)
