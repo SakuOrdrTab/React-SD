@@ -1,6 +1,7 @@
 import '../styles/PromptSettings.css'
 import './GuidanceScaleSlider'
 import GuidanceScaleSlider from './GuidanceScaleSlider'
+import InferenceSlider from './InferenceSlider'
 
 const PromptSettings = ({ imageSettings, setImageSettings }) => {
     return (
@@ -28,6 +29,7 @@ const PromptSettings = ({ imageSettings, setImageSettings }) => {
                 </p>
             </div>
             <GuidanceScaleSlider imageSettings={imageSettings} setImageSettings={setImageSettings} />
+            <InferenceSlider imageSettings={imageSettings} setImageSettings={setImageSettings} />
         </div>
     )
 }

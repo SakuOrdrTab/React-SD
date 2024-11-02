@@ -39,7 +39,9 @@ def generate_image():
     
     negative_prompt = image_settings.get('negativePrompt', '')
     print("Found negative prompt: ", negative_prompt)
-    # num_inference_steps = data.get('num_inference_steps', 28)
+    num_inference_steps = image_settings.get('numInferenceSteps', 28)
+    print("Found inference steps: ", num_inference_steps)
+
     # height = data.get('height', 512)
     # width = data.get('width', 512)
     guidance_scale = image_settings.get('guidanceScale', 7.0)
@@ -51,7 +53,7 @@ def generate_image():
     output = creator.create(
         prompt=prompt,
         negative_prompt=negative_prompt,
-        # num_inference_steps=num_inference_steps,
+        num_inference_steps=num_inference_steps,
         # height=height,
         # width=width,
         guidance_scale=guidance_scale,

@@ -1,0 +1,21 @@
+.inference-slider {
+    display: flex;
+    margin: 0 auto 20px 20px;
+    padding: 15px 30px; 
+    font-size: 18px;
+}
+
+.inference-slider .MuiSlider-track {
+    background-color: rgb(57, 57, 57); /* Track color */
+    color:rgb(42, 165, 126);
+    width: 90%;
+}
+
+.inference-slider .MuiSlider-rail {
+    background-color: lightgray; /* Rail color */
+}
+
+.inference-slider .MuiSlider-thumb {
+    background-color: rgb(57, 57, 57); /* Thumb (handle) color */
+}
+
