@@ -42,11 +42,14 @@ def generate_image():
     num_inference_steps = image_settings.get('numInferenceSteps', 28)
     print("Found inference steps: ", num_inference_steps)
 
-    # height = data.get('height', 512)
-    # width = data.get('width', 512)
+    height = image_settings.get('height', 512)
+    print("Found height: ", height)
+    width = image_settings.get('width', 512)
+    print("Found width: ", width)
     guidance_scale = image_settings.get('guidanceScale', 7.0)
     print('Found guidance scale: ', guidance_scale)
-    # num_images_per_prompt = data.get('num_images_per_prompt', 1)
+    num_images_per_prompt = image_settings.get('numImagesPerPrompt', 1)
+    print('Found num images per prompt: ', num_images_per_prompt)
 
     # Generate images using SDCreator
     print('Starting creator.create')
