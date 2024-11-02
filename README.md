@@ -12,7 +12,7 @@ The stable diffusion part is nothing fance, the idea was just to experiment with
 
 ## Installation
 
-the python backend needs the virtual environment. Go to the backend folder, install requirements in the 'requirements.txt' and I strongly suggest installing pytorch separately as it can be a bit tricky. Note that I used an older pytorch, the new version worked very slow in my system.
+the python backend needs the virtual environment. Go to the backend folder, install requirements in the `requirements.txt` and I strongly suggest installing pytorch separately as it can be a bit tricky. Note that I used an older pytorch, the new version worked very slow in my system.
 
 For the frontend, just run npm install in the frontend directory.
 
