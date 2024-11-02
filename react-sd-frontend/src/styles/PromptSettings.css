@@ -3,5 +3,10 @@
     box-sizing: border-box; 
     margin-right: 10px;
     margin-left: 10px;
+    background-color: #000000; /* Black background */
+    color:rgb(206, 206, 206);
+    /* Add any other styles you want, like padding, border, etc. */
+    padding: 10px;
+    border: 1px solid #807e7e; 
   } 
   

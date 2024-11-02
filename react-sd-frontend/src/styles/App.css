@@ -7,11 +7,15 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #00ff99;
+}
+
 .application {
   display: flex;
   width: 100vw;
   height: 100vh;
-  background-color: aquamarine;
+  background-color: rgb(37, 37, 37);
   font-family: 'Lato', sans-serif; 
 }
 
