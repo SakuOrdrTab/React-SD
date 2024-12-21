@@ -6,6 +6,7 @@ const generateImage = async (imageSettings) => {
     try {
         const response = await axios.post(baseUrl, imageSettings)
         console.log('response.data:', response.data)
+        console.log('response.body: ', response.body)
         return response.data
     } catch (error) {
         console.log('Error generating image: ', error.message)
