@@ -8,7 +8,7 @@ A little react project for experimenting react-python integration
 
 This is just a little experiment exploring integrating python flask backend with react frontend.
 
-The stable diffusion part is nothing fance, the idea was just to experiment with python and JS full stack. If you are seriously doing stable diffusion, clone https://github.com/AUTOMATIC1111/stable-diffusion-webui or https://github.com/comfyanonymous/ComfyUI
+The stable diffusion part is nothing fancy, the idea was just to experiment with python and JS full stack. If you are seriously doing stable diffusion, clone https://github.com/AUTOMATIC1111/stable-diffusion-webui or https://github.com/comfyanonymous/ComfyUI
 
 ## Installation
 
